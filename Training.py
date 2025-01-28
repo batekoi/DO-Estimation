@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 25 18:09:13 2025
 
-@author: ASUS_ROG
+@author: leekai
 
 Details:
     includes 6 independent variables
