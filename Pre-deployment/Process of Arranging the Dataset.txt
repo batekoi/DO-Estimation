@@ -1,0 +1,31 @@
+Process of Arranging the Dataset
+[ US WQP Files ]
+1. Delete all columns except time, date, char name, results value, results unit code, result status
+2. Click < Format as Table > option in excel
+3. Filter
+- Filter Results to 'Accepted' & 'Validated' Only
+- Copy all DO, pH, Conductivity, WT, Turbidity, AP details
+	* NOTE: always double check the units before copying. make sure they are uniform. if not, convert.
+- Paste to New File (follow code name format at the bottom of this file)
+4. < Format as table >
+- Make sure parameters names are uniform: "pH", "Specific conductance", "Temperature, water", "Turbidity", "Barometric pressure", "Dissolved Oxygen"
+- if not, replace.
+5. Run file on 'dataset formatter.py' program 
+6. Double check the file.
+7. Delete DO Blanks (No value), pH + WT blanks
+8. Save as New .csv file
+9. Run on Spyder ML Program 
+
+----
+
+Dataset File Names Format: Status_DateYear
+eg. RAW_SPR23
+Status:
+Raw: RAW
+Unfiltered: UF
+Filtered: F
+Arranged: A
+
+Date:
+Spring (March 1 to May 31) : SPR
+Summer (June 1 to September 30) : SUM
